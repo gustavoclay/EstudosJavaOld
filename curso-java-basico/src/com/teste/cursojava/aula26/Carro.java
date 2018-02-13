@@ -1,4 +1,4 @@
-package com.teste.cursojava.aula25;
+package com.teste.cursojava.aula26;
 
 public class Carro {
 
@@ -12,4 +12,10 @@ public class Carro {
 		System.out.println("A autonomia do Carro é: " + capCombustivel * consumoCombustivel + " KM.");
 	}
 
+	double obterAutonomia() {
+		
+		System.out.println("Método obterAutonomia foi chamado!");
+		
+		return capCombustivel * consumoCombustivel;
+	}
 }
