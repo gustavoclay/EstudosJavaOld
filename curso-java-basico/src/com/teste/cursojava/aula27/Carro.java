@@ -1,4 +1,4 @@
-package com.teste.cursojava.aula26;
+package com.teste.cursojava.aula27;
 
 public class Carro {
 
@@ -18,4 +18,14 @@ public class Carro {
 
 		return capCombustivel * consumoCombustivel;
 	}
+
+	double calcularCombustivel (double km) {
+		double qtdCombustivel = km/consumoCombustivel;
+		return qtdCombustivel;
+	}
+	
+	
+	
+	
+	
 }
