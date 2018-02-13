@@ -1,4 +1,4 @@
-package com.teste.cursojava.aula24;
+package com.teste.cursojava.aula25;
 
 public class TesteCarro {
 	public static void main(String[] args) {
@@ -13,6 +13,8 @@ public class TesteCarro {
 
 		System.out.println(van.marca);
 		System.out.println(van.modelo);
+		
+		van.exibirAutonomia();
 
 		Carro fusca = new Carro();
 
@@ -24,5 +26,8 @@ public class TesteCarro {
 
 		System.out.println(fusca.marca);
 		System.out.println(fusca.modelo);
+		
+		fusca.exibirAutonomia();
+
 	}
 }
