@@ -1,10 +1,20 @@
 package com.teste.cursojava.aula36;
 
+import java.util.Arrays;
+
 public class Contato {
 
 	private String nome;
 	private Endereco endereco;
-	private String telefone;
+	private Telefone[] telefones;
+
+	public Telefone[] getTelefones() {
+		return telefones;
+	}
+
+	public void setTelefones(Telefone[] telefones) {
+		this.telefones = telefones;
+	}
 
 	public Contato() {
 	}
@@ -25,12 +35,10 @@ public class Contato {
 		this.endereco = endereco;
 	}
 
-	public String getTelefone() {
-		return telefone;
+	@Override
+	public String toString() {
+		return "Contato [nome=" + nome + ", endereco=" + endereco + ", telefones=" + Arrays.toString(telefones) + "]";
 	}
 
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
 
 }

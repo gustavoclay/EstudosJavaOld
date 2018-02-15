@@ -7,7 +7,6 @@ public class Teste {
 		Contato contato = new Contato();
 
 		contato.setNome("Gustavo");
-		contato.setTelefone("0119999999");
 
 		Endereco endereco = new Endereco();
 
@@ -20,9 +19,39 @@ public class Teste {
 
 		contato.setEndereco(endereco);
 
+		Telefone telefone = new Telefone();
+		telefone.setDdd("61");
+		telefone.setTipo("Fixo");
+		telefone.setNumero("30000000");
+
+		Telefone telefone2 = new Telefone();
+		telefone2.setDdd("61");
+		telefone2.setTipo("Celular");
+		telefone2.setNumero("999999999");
+
+		Telefone[] telefones = new Telefone[2];
+		telefones[0] = telefone;
+		telefones[1] = telefone2;
+
+		// contato.setTelefone(telefone);
+		contato.setTelefones(telefones);
+
 		System.out.println(contato.getNome());
-		System.out.println(contato.getEndereco());
-		System.out.println(contato.getTelefone());
+
+		if (contato != null && contato.getEndereco() != null) {
+			System.out.println(contato.getEndereco().toString());
+		}
+
+		/*
+		 * if(contato != null && contato.getTelefone() != null) {
+		 * System.out.println(contato.getTelefone().toString()); }
+		 */
+
+		if (contato != null && contato.getTelefones() != null) {
+			for (Telefone t : telefones) {
+				System.out.println(t.toString());
+			}
+		}
 
 	}
 
