@@ -11,8 +11,9 @@ public class TesteFatorial {
 		int num = scan.nextInt();
 
 		Fatorial res = new Fatorial();
-		System.out.println("Fatorial: " + res.calculaFatorial(num));
-
+		System.out.println("Fatorial normal: " + res.calculaFatorial(num));
+		
+		System.out.println("Fatorial recursivo: " + res.fatorial(num));
 	}
 
 }
