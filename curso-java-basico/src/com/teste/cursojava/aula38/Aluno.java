@@ -5,6 +5,15 @@ public class Aluno extends Pessoa {
 	private String[] cursos;
 	private String[][] notas;
 
+	public void verificarAcesso() {
+
+	}
+
+	public Aluno(String nome, String endereco, String telefone, String[] curso) {
+		super(nome, endereco, telefone);
+		this.cursos = curso;
+	}
+
 	public Aluno() {
 		super();
 	}
@@ -31,6 +40,11 @@ public class Aluno extends Pessoa {
 
 	public boolean verificarAprovado() {
 		return true;
+	}
+
+	public void metodoQualquer() {
+		super.setCpf("03424159199");
+		this.setCpf("00000000001");
 	}
 
 }

@@ -7,6 +7,18 @@ public class Pessoa {
 	private String telefone;
 	private String cpf;
 
+	public Pessoa(String nome, String endereco, String telefone) {
+		super();
+		this.nome = nome;
+		this.endereco = endereco;
+		this.telefone = telefone;
+	}
+
+	public Pessoa() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getNome() {
 		return nome;
 	}
