@@ -1,5 +1,7 @@
 package com.teste.cursojava.aula43;
 
+import java.util.Arrays;
+
 public class Aluno {
 
 	private String curso;
@@ -39,7 +41,7 @@ public class Aluno {
 	}
 
 	public String obterEtiquetaEndereco() {
-		String s = "Endereço do Aluno: ";
+		String s = "Endereï¿½o do Aluno: ";
 		// s += this.getEndereco();
 
 		return s;
@@ -47,9 +49,40 @@ public class Aluno {
 
 	// @Override
 	public void imprimirEtiquetaEndereco() {
-		System.out.println("Imprimindo o endereço do aluno: ");
+		System.out.println("Imprimindo o endereï¿½o do aluno: ");
 		System.out.println(this.obterEtiquetaEndereco());
 
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [curso=" + curso + ", notas=" + Arrays.toString(notas) + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + Arrays.hashCode(notas);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		
+		Aluno other = (Aluno) obj;
+
+		if(curso.equalsIgnoreCase(other.getCurso())) {
+			return true;
+		}
+		
+		return true;
+	}
+	
+	
 
 }
