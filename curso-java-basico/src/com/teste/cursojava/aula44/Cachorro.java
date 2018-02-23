@@ -1,0 +1,36 @@
+package com.teste.cursojava.aula44;
+
+public class Cachorro extends Mamifero{
+
+	private int tamanho;
+	private int raca;
+
+	public int getTamanho() {
+		return tamanho;
+	}
+
+	public void setTamanho(int tamanho) {
+		this.tamanho = tamanho;
+	}
+
+	public int getRaca() {
+		return raca;
+	}
+
+	public void setRaca(int raca) {
+		this.raca = raca;
+	}
+
+	@Override
+	public void amamentar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void emitirSom() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
