@@ -21,6 +21,23 @@ public class teste2 {
 //  Downcasting só funciona para conversão do tipo em particular
 		
 		
+		Pessoa pessoa = new Pessoa();
+		Aluno aluno = new Aluno();
+		Professor professor = new Professor();
+		
+		if (pessoa instanceof Pessoa) {
+			System.out.println("É do tipo Pessoa!");
+		}
+		
+		if (aluno instanceof Aluno) {
+			System.out.println("É do tipo Aluno!");
+		}
+		
+		if (professor instanceof Professor) {
+			System.out.println("É do tipo Professor!");
+		}
+		
+		
 	}
 	
 	public static String obterString() {
