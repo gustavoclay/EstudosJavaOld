@@ -1,4 +1,4 @@
-package com.teste.cursojava50;
+package com.teste.cursojava.aula50;
 
 public class DivisaoNaoExata extends Exception {
 
