@@ -15,5 +15,7 @@ public class DivisaoNaoExata extends Exception {
 	public String toString() {
 		return "Resultado de " + num +" / "+dem + " não é um inteiro!";
 	}
+	
+	//Encerrado curso Java básico
 
 }
