@@ -2,6 +2,7 @@ package br.com.caelum.tarefas.modelo;
 
 import java.util.Calendar;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -14,8 +15,11 @@ public class Tarefa {
 	@Id
 	@GeneratedValue
 	private Long id;
-
+	
+	@Column
 	private String descricao;
+	
+	@Column
 	private boolean finalizado;
 
 	@Temporal(TemporalType.DATE)
